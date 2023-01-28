@@ -1,0 +1,14 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#f72d31, #b9b9b9);
+}
+
+/* red #fa4547
+greey #b9b9b9
+lite-black #363636 */
