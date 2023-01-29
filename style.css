@@ -4,11 +4,128 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(#f72d31, #b9b9b9);
+  background: linear-gradient(#f72d31, #363636 );
 }
 
-/* red #fa4547
-greey #b9b9b9
-lite-black #363636 */
+
+.conversion__inner {
+  padding: 20px 10px;
+  position: relative;
+  width: 500px;
+  background: rgba(254, 245, 245, 0.2);
+  border-radius: 20px;
+}
+
+.conversion__title {
+  margin-bottom: 10px;
+  color: rgb(24, 23, 23);
+}
+.conversion__title-result {
+  color: rgb(24, 23, 23);
+  display: inline-block;
+  margin-right: 149px;
+}
+
+.conversion__registrar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+
+.conversion__buttons-div {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: rgba(254, 245, 245, 0.2);
+  font-weight: 700;
+  margin-right: 20px;
+}
+.conversion__buttons-div:nth-child(2) {
+  margin-right: 154px;
+}
+
+.conversion__buttons-div:hover {
+  box-shadow:0 0 10px #000;
+
+}
+
+ .active {
+  box-shadow:0 0 10px #000;
+  color: #fff;
+}
+
+
+
+.conversion__btn {
+  outline: none;
+  font-weight:700;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(254, 245, 245, 0.2);
+
+}
+.conversion__btn:hover {
+  box-shadow:0 0 10px #000;
+  color:#fff;
+}
+
+.conversion__textarea {
+  margin-bottom: 10px;
+  resize: none;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: rgba(254, 245, 245, 0.5);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+
+.conversion__textarea-result {
+  resize: none;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: rgba(254, 245, 245, 0.5);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+.conversion__clear-btn {
+  font-weight:700;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(254, 245, 245, 0.2);
+}
+
+.conversion__clear-btn:hover {
+  box-shadow:0 0 10px #000;
+  color:#fff;
+}
+
+.conversion__title-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
