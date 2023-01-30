@@ -4,10 +4,23 @@ const textAreaResult = document.querySelector('.conversion__textarea-result')
 const radioCase = document.querySelectorAll('.conversion__buttons-div')
 const clearBtn = document.querySelector('.conversion__clear-btn')
 
-const upVtn = document.querySelector('.conversion__up')
-const lowVtn = document.querySelector('.conversion__low')
 
+const btnUp = document.querySelector('#up')
+const btnLow = document.querySelector('#low')
 
+// btnUp.addEventListener('click', () => {
+//   btnUp.classList.toggle('active')
+//   if (btnLow.classList.contains('active')) {
+//     btnLow.classList.remove('active')
+//   }
+// })
+// btnLow.addEventListener('click', () => {
+//   btnLow.classList.toggle('active')
+//   if (btnUp.classList.contains('active')) {
+//     btnUp.classList.remove('active')
+//   }
+// })
+ 
 function addClass () {
   radioCase.forEach(item => {
     item.addEventListener('click', () => {
@@ -24,39 +37,32 @@ addClass()
 
 /*================================*/
 
-btn.addEventListener('click', (e) => {
-
+btn.addEventListener('click', () => {
+  if (btnUp.classList.contains('active')) {
+    textUpper()
+  } else if (btnLow.classList.contains('active')){
+    textLower()
+  } else {
+    
+  }
 })
 
 clearBtn.addEventListener('click', () => {
-  textAreaResult.value = ''
+  textAreaResult.textContent = ''
 })
 
-
-upVtn.addEventListener('click', () => {
+function textUpper () {
   let val = textArea.value
   textArea.value = ''
   textAreaResult.append(val.toUpperCase())
-})
+}
+// textUpper()
 
-lowVtn.addEventListener('click', () =>{
+function textLower () {
   let val = textArea.value
   textArea.value = ''
   textAreaResult.append(val.toLowerCase())
-})
-
-// function textUpper () {
-//   let val = textArea.value
-//   textArea.value = ''
-//   textAreaResult.append(val.toUpperCase())
-// }
-// textUpper()
-
-// function textLower () {
-//   let val = textArea.value
-//   textArea.value = ''
-//   textAreaResult.append(val.toLowerCase())
-// }
+}
 // textLower()
 
 
